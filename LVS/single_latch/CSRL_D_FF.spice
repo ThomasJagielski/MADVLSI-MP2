@@ -1,0 +1,23 @@
+* SPICE3 file created from CSRL_D_FF.ext - technology: sky130A
+
+
+* Top level circuit CSRL_D_FF
+
+X0 Qn Q a_290_1950# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X1 Q CLK a_30_1320# VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=7.5e+11p ps=5e+06u w=1e+06u l=150000u
+X2 VP a_30_1320# a_30_1950# VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X3 a_30_710# CLK VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=4.5e+06u as=3e+12p ps=1.6e+07u w=2e+06u l=150000u
+X4 a_290_1320# CLK VP VP sky130_fd_pr__pfet_01v8 ad=2.5e+11p pd=2.5e+06u as=0p ps=0u w=1e+06u l=150000u
+X5 a_30_n30# CLK VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=4.5e+06u as=0p ps=0u w=2e+06u l=150000u
+X6 VN Qn Q VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 a_30_1320# CLK D VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X8 a_290_1950# CLK VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 Q Qn a_290_1320# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X10 VP a_30_1950# a_30_1320# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 Qn CLK a_30_1950# VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=7.5e+11p ps=5e+06u w=1e+06u l=150000u
+X12 a_30_1950# CLK Dn VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X13 a_30_1320# a_30_1950# a_30_710# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X14 a_30_1950# a_30_1320# a_30_n30# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X15 VN Q Qn VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.end
+

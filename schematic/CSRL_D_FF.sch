@@ -12,8 +12,6 @@ N 320 -460 360 -460 { lab=#net3}
 N 320 -230 360 -230 { lab=#net4}
 N 320 -790 360 -790 { lab=VP}
 N 320 -670 360 -670 { lab=VP}
-N 340 -810 340 -670 { lab=VP}
-N 340 -810 340 -790 { lab=VP}
 N 420 -790 460 -790 { lab=#net5}
 N 420 -670 460 -670 { lab=#net6}
 N 420 -460 460 -460 { lab=Q}
@@ -60,9 +58,12 @@ N 140 -150 570 -150 { lab=VN}
 N 570 -230 570 -150 { lab=VN}
 N 140 -460 140 -230 { lab=VN}
 N 140 -230 140 -140 { lab=VN}
-N 110 -60 390 -60 {}
-N 390 -760 390 -60 {}
-N 190 -760 190 -60 {}
+N 110 -60 390 -60 { lab=CLK}
+N 390 -760 390 -60 { lab=CLK}
+N 190 -760 190 -60 { lab=CLK}
+N 340 -920 340 -670 { lab=VP}
+N 340 -790 340 -670 { lab=VP}
+N 140 -920 570 -920 { lab=VP}
 C {madvlsi/pmos3.sym} 390 -790 3 0 {name=M1
 L=0.15
 W=1
@@ -215,7 +216,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 190 -460 3 0 {name=M11
 L=0.15
-W=2
+W=1
 body=GND
 nf=1
 mult=1
@@ -320,7 +321,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 190 -560 3 0 {name=M18
 L=0.15
-W=2
+W=1
 body=GND
 nf=1
 mult=1
@@ -335,7 +336,7 @@ spiceprefix=X
 }
 C {devices/ipin.sym} 160 -790 0 0 {name=p1 lab=Dn}
 C {devices/ipin.sym} 160 -670 0 0 {name=p3 lab=D}
-C {devices/iopin.sym} 340 -810 3 0 {name=p2 lab=VP}
+C {devices/iopin.sym} 140 -920 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 140 -140 1 0 {name=p4 lab=VN}
 C {devices/iopin.sym} 110 -60 2 0 {name=p7 lab=CLK}
 C {devices/opin.sym} 580 -790 0 0 {name=p6 lab=Qn}
