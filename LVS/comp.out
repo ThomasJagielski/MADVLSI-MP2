@@ -1,40 +1,30 @@
 Equate elements:  no current cell.
 Equate elements:  no current cell.
+Class CSRL_D_FF_xschem.spice:  Merged 2 devices.
 
 Subcircuit summary:
-Circuit 1: inverter                        |Circuit 2: inverter                        
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 4                          |Number of nets: 4                          
----------------------------------------------------------------------------------------
-Circuits match uniquely.
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: inverter                        |Circuit 2: inverter                        
--------------------------------------------|-------------------------------------------
-Y                                          |Y                                          
-A                                          |A                                          
-VDD                                        |VDD                                        
-GND                                        |GND                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes inverter and inverter are equivalent.
-
-Subcircuit summary:
-Circuit 1: CSRL_simulate_3.spice           |Circuit 2: CSRL_simulate_copy.spice        
+Circuit 1: CSRL_D_FF.spice                 |Circuit 2: CSRL_D_FF_xschem.spice          
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (8)                
 sky130_fd_pr__nfet_01v8 (8)                |sky130_fd_pr__nfet_01v8 (8)                
-vsrc (3)                                   |vsrc (3)                                   
-inverter (1)                               |inverter (1)                               
-Number of devices: 20                      |Number of devices: 20                      
+Number of devices: 16                      |Number of devices: 16                      
 Number of nets: 13                         |Number of nets: 13                         
 ---------------------------------------------------------------------------------------
-Circuits match uniquely.
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
 Netlists match uniquely.
+Circuits match correctly.
+There were property errors.
+sky130_fd_pr__nfet_01v814 vs. sky130_fd_pr__nfet_01v8M11:
+ w circuit1: 1.9   circuit2: 4   (delta=71.2%, cutoff=1%)
+sky130_fd_pr__nfet_01v82 vs. sky130_fd_pr__nfet_01v8M12:
+ w circuit1: 1.9   circuit2: 2   (delta=5.13%, cutoff=1%)
+sky130_fd_pr__nfet_01v811 vs. sky130_fd_pr__nfet_01v8M16:
+ w circuit1: 1.9   circuit2: 1   (delta=62.1%, cutoff=1%)
+sky130_fd_pr__nfet_01v810 vs. sky130_fd_pr__nfet_01v8M15:
+ w circuit1: 1.9   circuit2: 1   (delta=62.1%, cutoff=1%)
 Cells have no pins;  pin matching not needed.
-Device classes CSRL_simulate_3.spice and CSRL_simulate_copy.spice are equivalent.
+Device classes CSRL_D_FF.spice and CSRL_D_FF_xschem.spice are equivalent.
 Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: CSRL_D_FF.spice
