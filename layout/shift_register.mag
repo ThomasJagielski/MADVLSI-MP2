@@ -1,0 +1,37 @@
+magic
+tech sky130A
+timestamp 1614282699
+<< locali >>
+rect 20 1180 45 1270
+rect 1135 1180 1160 1270
+rect 20 865 45 955
+rect 1135 865 1160 955
+rect 20 20 35 40
+<< metal1 >>
+rect 20 1305 40 1405
+rect 20 55 50 155
+use CSRL_D_FF  CSRL_D_FF_3 ~/Documents/MADVLSI-MP2/layout
+timestamp 1614282317
+transform 1 0 925 0 1 200
+box -70 -200 255 1230
+use CSRL_D_FF  CSRL_D_FF_2
+timestamp 1614282317
+transform 1 0 640 0 1 200
+box -70 -200 255 1230
+use CSRL_D_FF  CSRL_D_FF_1
+timestamp 1614282317
+transform 1 0 355 0 1 200
+box -70 -200 255 1230
+use CSRL_D_FF  CSRL_D_FF_0
+timestamp 1614282317
+transform 1 0 70 0 1 200
+box -70 -200 255 1230
+<< labels >>
+rlabel metal1 20 1355 20 1355 7 VP
+rlabel locali 20 1225 20 1225 7 Dn
+rlabel locali 20 910 20 910 7 D
+rlabel locali 1160 1225 1160 1225 3 Qn
+rlabel locali 1160 910 1160 910 3 Q
+rlabel locali 20 30 20 30 7 CLK
+rlabel metal1 20 100 20 100 7 VN
+<< end >>
