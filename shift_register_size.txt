@@ -1,0 +1,25 @@
+width 1:
+
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:    9.90 x 16.15   (  0.20,  0.00 ), ( 10.10,  16.15)  159.88    
+lambda:   990.00 x 1615.00  ( 20.00,  0.00 ), ( 1010.00,  1615.00)  1598850.00
+internal:   1980 x 3230    (    40,  0    ), (  2020,  3230 )  6395400 
+
+
+
+
+
+
+width 2:
+
+
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   11.40 x 14.05   (  0.20,  0.00 ), ( 11.60,  14.05)  160.17    
+lambda:   1140.00 x 1405.00  ( 20.00,  0.00 ), ( 1160.00,  1405.00)  1601700.00
+internal:   2280 x 2810    (    40,  0    ), (  2320,  2810 )  6406800   
+
+

@@ -1,0 +1,20 @@
+Flattening unmatched subcell CSRL_D_FF_w_1 in circuit shift_register_w_1_xschem_lvs.spice (0)(4 instances)
+Flattening unmatched subcell CSRL_D_FF_width_1 in circuit shift_register_width_1.spice (1)(4 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: shift_register_w_1_xschem_lvs.s |Circuit 2: shift_register_width_1.spice    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (32)               |sky130_fd_pr__pfet_01v8 (32)               
+sky130_fd_pr__nfet_01v8 (32)               |sky130_fd_pr__nfet_01v8 (32)               
+Number of devices: 64                      |Number of devices: 64                      
+Number of nets: 37                         |Number of nets: 37                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes shift_register_w_1_xschem_lvs.spice and shift_register_width_1.spice are equivalent.
+Circuits match uniquely.
