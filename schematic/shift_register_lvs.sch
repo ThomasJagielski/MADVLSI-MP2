@@ -21,19 +21,27 @@ N 250 -350 250 -280 { lab=CLK}
 N 360 -350 360 -280 { lab=CLK}
 N 470 -350 470 -280 { lab=CLK}
 N 580 -350 580 -280 { lab=CLK}
+N 220 -350 220 -340 { lab=GND}
+N 330 -350 330 -340 { lab=GND}
+N 440 -350 440 -340 { lab=GND}
+N 550 -350 550 -340 { lab=GND}
+N 550 -480 550 -470 { lab=VDD}
+N 440 -480 440 -470 { lab=VDD}
+N 330 -480 330 -470 { lab=VDD}
+N 220 -480 220 -470 { lab=VDD}
 C {devices/lab_pin.sym} 190 -440 0 0 {name=l18 sig_type=std_logic lab=D}
 C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/CSRL_D_FF.sym} 140 -410 0 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/CSRL_D_FF.sym} 250 -410 0 0 {name=X3}
 C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/CSRL_D_FF.sym} 360 -410 0 0 {name=X4}
 C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/CSRL_D_FF.sym} 470 -410 0 0 {name=X5}
-C {madvlsi/gnd.sym} 220 -350 0 0 {name=l1 lab=GND}
-C {madvlsi/gnd.sym} 330 -350 0 0 {name=l3 lab=GND}
-C {madvlsi/gnd.sym} 440 -350 0 0 {name=l4 lab=GND}
-C {madvlsi/gnd.sym} 550 -350 0 0 {name=l6 lab=GND}
-C {madvlsi/vdd.sym} 220 -470 0 0 {name=l9 lab=VDD}
-C {madvlsi/vdd.sym} 330 -470 0 0 {name=l10 lab=VDD}
-C {madvlsi/vdd.sym} 440 -470 0 0 {name=l11 lab=VDD}
-C {madvlsi/vdd.sym} 550 -470 0 0 {name=l12 lab=VDD}
+C {madvlsi/gnd.sym} 220 -340 0 0 {name=l1 lab=GND}
+C {madvlsi/gnd.sym} 330 -340 0 0 {name=l3 lab=GND}
+C {madvlsi/gnd.sym} 440 -340 0 0 {name=l4 lab=GND}
+C {madvlsi/gnd.sym} 550 -340 0 0 {name=l6 lab=GND}
+C {madvlsi/vdd.sym} 220 -480 0 0 {name=l9 lab=VDD}
+C {madvlsi/vdd.sym} 330 -480 0 0 {name=l10 lab=VDD}
+C {madvlsi/vdd.sym} 440 -480 0 0 {name=l11 lab=VDD}
+C {madvlsi/vdd.sym} 550 -480 0 0 {name=l12 lab=VDD}
 C {devices/lab_pin.sym} 110 -280 0 0 {name=l13 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 610 -440 2 0 {name=l14 sig_type=std_logic lab=Q3}
 C {devices/lab_pin.sym} 610 -390 2 0 {name=l15 sig_type=std_logic lab=Qn3}
