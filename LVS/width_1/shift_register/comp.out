@@ -1,20 +1,43 @@
-Flattening unmatched subcell CSRL_D_FF_w_1 in circuit shift_register_w_1_xschem_lvs.spice (0)(4 instances)
-Flattening unmatched subcell CSRL_D_FF_width_1 in circuit shift_register_width_1.spice (1)(4 instances)
+Flattening unmatched subcell CSRL_D_FF_width_1 in circuit shift_register.spice (0)(4 instances)
+Flattening unmatched subcell CSRL_D_FF_w_1 in circuit shift_register_w_1_xschem_lvs.spice (1)(4 instances)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 
+Cell inverter disconnected node: CLK
+
 Subcircuit summary:
-Circuit 1: shift_register_w_1_xschem_lvs.s |Circuit 2: shift_register_width_1.spice    
+Circuit 1: inverter                        |Circuit 2: inverter                        
 -------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VP                                         |VDD **Mismatch**                           
+VN                                         |GND **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter and inverter are equivalent.
+
+Subcircuit summary:
+Circuit 1: shift_register.spice            |Circuit 2: shift_register_w_1_xschem_lvs.s 
+-------------------------------------------|-------------------------------------------
+inverter (1)                               |inverter (1)                               
 sky130_fd_pr__pfet_01v8 (32)               |sky130_fd_pr__pfet_01v8 (32)               
 sky130_fd_pr__nfet_01v8 (32)               |sky130_fd_pr__nfet_01v8 (32)               
-Number of devices: 64                      |Number of devices: 64                      
+Number of devices: 65                      |Number of devices: 65                      
 Number of nets: 37                         |Number of nets: 37                         
 ---------------------------------------------------------------------------------------
-Resolving automorphisms by property value.
-Resolving automorphisms by pin name.
+Circuits match uniquely.
 Netlists match uniquely.
-Circuits match correctly.
 Cells have no pins;  pin matching not needed.
-Device classes shift_register_w_1_xschem_lvs.spice and shift_register_width_1.spice are equivalent.
+Device classes shift_register.spice and shift_register_w_1_xschem_lvs.spice are equivalent.
 Circuits match uniquely.

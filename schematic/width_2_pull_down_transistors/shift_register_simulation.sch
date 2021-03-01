@@ -48,15 +48,15 @@ C {devices/code_shown.sym} 210 -160 0 0 {name=SPICE only_toplevel=false value=".
 }
 C {devices/lab_pin.sym} 840 -190 1 0 {name=l16 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 630 -190 1 0 {name=l17 sig_type=std_logic lab=CLK}
-C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/inverter.sym} 70 -370 0 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/width_2_pull_down_transistors/inverter.sym} 70 -370 0 0 {name=X1}
 C {devices/lab_pin.sym} 70 -440 0 0 {name=l18 sig_type=std_logic lab=D}
 C {madvlsi/vdd.sym} 120 -400 0 0 {name=l20 lab=VDD}
 C {madvlsi/gnd.sym} 120 -340 0 0 {name=l21 lab=GND}
 C {madvlsi/gnd.sym} 560 -130 0 0 {name=l2 lab=GND}
-C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/CSRL_D_FF.sym} 140 -410 0 0 {name=X2}
-C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/CSRL_D_FF.sym} 250 -410 0 0 {name=X3}
-C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/CSRL_D_FF.sym} 360 -410 0 0 {name=X4}
-C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/CSRL_D_FF.sym} 470 -410 0 0 {name=X5}
+C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/width_2_pull_down_transistors/CSRL_D_FF.sym} 140 -410 0 0 {name=X2}
+C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/width_2_pull_down_transistors/CSRL_D_FF.sym} 250 -410 0 0 {name=X3}
+C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/width_2_pull_down_transistors/CSRL_D_FF.sym} 360 -410 0 0 {name=X4}
+C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/width_2_pull_down_transistors/CSRL_D_FF.sym} 470 -410 0 0 {name=X5}
 C {madvlsi/gnd.sym} 220 -350 0 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} 330 -350 0 0 {name=l3 lab=GND}
 C {madvlsi/gnd.sym} 440 -350 0 0 {name=l4 lab=GND}

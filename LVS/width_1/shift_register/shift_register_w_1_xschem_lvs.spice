@@ -1,8 +1,9 @@
 **.subckt shift_register_w_1_lvs
-X2 Dn D Qn0 Q0 GND VDD CLK CSRL_D_FF_w_1
+X2 net1 D Qn0 Q0 GND VDD CLK CSRL_D_FF_w_1
 X3 Qn0 Q0 Qn1 Q1 GND VDD CLK CSRL_D_FF_w_1
 X4 Qn1 Q1 Qn2 Q2 GND VDD CLK CSRL_D_FF_w_1
 X5 Qn2 Q2 Qn3 Q3 GND VDD CLK CSRL_D_FF_w_1
+X1 D net1 VDD GND inverter
 **.ends
 
 * expanding   symbol:  /home/madvlsi/Documents/MADVLSI-MP2/schematic/width_1/CSRL_D_FF_w_1.sym # of
@@ -62,6 +63,23 @@ XM15 net3 net4 net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
 XM16 net4 net3 net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+
+* expanding   symbol:
+*+  /home/madvlsi/Documents/MADVLSI-MP2/schematic/width_2_pull_down_transistors/inverter.sym # of pins=4
+
+.subckt inverter  A Y VDD GND
+*.ipin A
+*.iopin VDD
+*.iopin GND
+*.opin Y
+XM3 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 GND A Y GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
 .ends

@@ -21,7 +21,12 @@ N 250 -350 250 -280 { lab=CLK}
 N 360 -350 360 -280 { lab=CLK}
 N 470 -350 470 -280 { lab=CLK}
 N 580 -350 580 -280 { lab=CLK}
-C {devices/lab_pin.sym} 190 -440 0 0 {name=l18 sig_type=std_logic lab=D}
+N 170 -390 170 -370 { lab=#net1}
+N 170 -390 190 -390 { lab=#net1}
+N 80 -440 190 -440 { lab=D}
+N 90 -370 100 -370 {}
+N 90 -440 90 -370 {}
+C {devices/lab_pin.sym} 80 -440 0 0 {name=l18 sig_type=std_logic lab=D}
 C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/width_1/CSRL_D_FF_w_1.sym} 140 -410 0 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/width_1/CSRL_D_FF_w_1.sym} 250 -410 0 0 {name=X3}
 C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/width_1/CSRL_D_FF_w_1.sym} 360 -410 0 0 {name=X4}
@@ -44,4 +49,6 @@ C {devices/lab_pin.sym} 290 -450 1 0 {name=l24 sig_type=std_logic lab=Q0
 C {devices/lab_pin.sym} 510 -380 3 0 {name=l25 sig_type=std_logic lab=Qn2}
 C {devices/lab_pin.sym} 400 -380 3 0 {name=l26 sig_type=std_logic lab=Qn1}
 C {devices/lab_pin.sym} 290 -380 3 0 {name=l27 sig_type=std_logic lab=Qn0}
-C {devices/lab_pin.sym} 190 -390 0 0 {name=l2 sig_type=std_logic lab=Dn}
+C {/home/madvlsi/Documents/MADVLSI-MP2/schematic/width_2_pull_down_transistors/inverter.sym} 80 -370 0 0 {name=X1}
+C {madvlsi/gnd.sym} 130 -340 0 0 {name=l2 lab=GND}
+C {madvlsi/vdd.sym} 130 -400 0 0 {name=l5 lab=VDD}

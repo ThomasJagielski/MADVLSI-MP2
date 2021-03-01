@@ -5,7 +5,7 @@ V {}
 S {}
 E {}
 N 230 -200 260 -200 { lab=VDD}
-N 230 -90 260 -90 { lab=VN}
+N 230 -90 260 -90 { lab=GND}
 N 290 -170 290 -40 { lab=A}
 N 320 -90 340 -90 { lab=Y}
 N 320 -200 340 -200 { lab=Y}
@@ -33,7 +33,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 290 -90 3 0 {name=M4
 L=0.15
-W=2
+W=1
 body=GND
 nf=1
 mult=1

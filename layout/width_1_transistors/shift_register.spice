@@ -1,4 +1,9 @@
-* SPICE3 file created from shift_register_width_1.ext - technology: sky130A
+* SPICE3 file created from shift_register.ext - technology: sky130A
+
+.subckt inverter Y VP VN CLK A
+X0 Y A VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=5e+06u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+X1 Y A VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
 
 .subckt CSRL_D_FF_width_1 Dn D Qn Q CLK VP VN
 X0 Qn Q a_290_2280# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
@@ -20,9 +25,11 @@ X15 a_30_n130# CLK VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06
 .ends
 
 
-* Top level circuit shift_register_width_1
+* Top level circuit shift_register
 
-XCSRL_D_FF_width_1_0 Dn D CSRL_D_FF_width_1_1/Dn CSRL_D_FF_width_1_1/D CLK VP VN CSRL_D_FF_width_1
+Xinverter_0 inverter_0/Y VP VN CLK D inverter
+XCSRL_D_FF_width_1_0 inverter_0/Y D CSRL_D_FF_width_1_1/Dn CSRL_D_FF_width_1_1/D CLK
++ VP VN CSRL_D_FF_width_1
 XCSRL_D_FF_width_1_1 CSRL_D_FF_width_1_1/Dn CSRL_D_FF_width_1_1/D CSRL_D_FF_width_1_2/Dn
 + CSRL_D_FF_width_1_2/D CLK VP VN CSRL_D_FF_width_1
 XCSRL_D_FF_width_1_2 CSRL_D_FF_width_1_2/Dn CSRL_D_FF_width_1_2/D CSRL_D_FF_width_1_3/Dn

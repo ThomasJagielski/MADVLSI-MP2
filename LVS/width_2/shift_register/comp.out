@@ -1,5 +1,29 @@
 Equate elements:  no current cell.
 Equate elements:  no current cell.
+
+Cell inverter disconnected node: CLK
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VP                                         |VDD **Mismatch**                           
+VN                                         |GND **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter and inverter are equivalent.
 Class CSRL_D_FF:  Merged 2 devices.
 
 Subcircuit summary:
@@ -375,36 +399,36 @@ Instance: sky130_fd_pr__pfet_01v812        |(no matching instance)
 Netlists do not match.
   Flattening non-matched subcircuits CSRL_D_FF CSRL_D_FF
 Subcircuit summary:
-Circuit 1: shift_register.spice            |Circuit 2: shift_register_lvs_xschem.spice 
+Circuit 1: shift_register_final.spice      |Circuit 2: shift_register_lvs_xschem.spice 
 -------------------------------------------|-------------------------------------------
+inverter (1)                               |inverter (1)                               
 sky130_fd_pr__pfet_01v8 (32)               |sky130_fd_pr__pfet_01v8 (32)               
 sky130_fd_pr__nfet_01v8 (32)               |sky130_fd_pr__nfet_01v8 (32)               
-Number of devices: 64                      |Number of devices: 64                      
+Number of devices: 65                      |Number of devices: 65                      
 Number of nets: 37                         |Number of nets: 37                         
 ---------------------------------------------------------------------------------------
-Resolving automorphisms by property value.
-Resolving automorphisms by pin name.
+Circuits match uniquely.
+Property errors were found.
 Netlists match uniquely.
-Circuits match correctly.
 There were property errors.
-CSRL_D_FF_3/sky130_fd_pr__nfet_01v814 vs. CSRL_D_FF5/sky130_fd_pr__nfet_01v8M16:
- w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
 CSRL_D_FF_3/sky130_fd_pr__nfet_01v813 vs. CSRL_D_FF5/sky130_fd_pr__nfet_01v8M15:
  w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
-CSRL_D_FF_2/sky130_fd_pr__nfet_01v814 vs. CSRL_D_FF4/sky130_fd_pr__nfet_01v8M16:
+CSRL_D_FF_3/sky130_fd_pr__nfet_01v814 vs. CSRL_D_FF5/sky130_fd_pr__nfet_01v8M16:
  w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
 CSRL_D_FF_2/sky130_fd_pr__nfet_01v813 vs. CSRL_D_FF4/sky130_fd_pr__nfet_01v8M15:
  w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
-CSRL_D_FF_1/sky130_fd_pr__nfet_01v814 vs. CSRL_D_FF3/sky130_fd_pr__nfet_01v8M16:
+CSRL_D_FF_2/sky130_fd_pr__nfet_01v814 vs. CSRL_D_FF4/sky130_fd_pr__nfet_01v8M16:
  w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
 CSRL_D_FF_1/sky130_fd_pr__nfet_01v813 vs. CSRL_D_FF3/sky130_fd_pr__nfet_01v8M15:
  w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
-CSRL_D_FF_0/sky130_fd_pr__nfet_01v814 vs. CSRL_D_FF2/sky130_fd_pr__nfet_01v8M16:
+CSRL_D_FF_1/sky130_fd_pr__nfet_01v814 vs. CSRL_D_FF3/sky130_fd_pr__nfet_01v8M16:
  w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
 CSRL_D_FF_0/sky130_fd_pr__nfet_01v813 vs. CSRL_D_FF2/sky130_fd_pr__nfet_01v8M15:
  w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
+CSRL_D_FF_0/sky130_fd_pr__nfet_01v814 vs. CSRL_D_FF2/sky130_fd_pr__nfet_01v8M16:
+ w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
 Cells have no pins;  pin matching not needed.
-Device classes shift_register.spice and shift_register_lvs_xschem.spice are equivalent.
+Device classes shift_register_final.spice and shift_register_lvs_xschem.spice are equivalent.
 Circuits match uniquely.
 Property errors were found.
-The following cells had property errors: shift_register.spice
+The following cells had property errors: shift_register_final.spice

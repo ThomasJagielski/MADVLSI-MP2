@@ -1,0 +1,39 @@
+magic
+tech sky130A
+timestamp 1614619498
+<< locali >>
+rect 1145 1180 1160 1270
+rect -90 865 -65 955
+rect 1145 865 1160 955
+rect -90 20 -75 40
+<< metal1 >>
+rect -90 1305 -75 1405
+rect -90 55 -75 155
+use inverter  inverter_0
+timestamp 1614619095
+transform 1 0 -40 0 1 185
+box -70 -165 85 1240
+use CSRL_D_FF  CSRL_D_FF_3
+timestamp 1614619048
+transform 1 0 925 0 1 200
+box -70 -200 255 1225
+use CSRL_D_FF  CSRL_D_FF_2
+timestamp 1614619048
+transform 1 0 640 0 1 200
+box -70 -200 255 1225
+use CSRL_D_FF  CSRL_D_FF_1
+timestamp 1614619048
+transform 1 0 355 0 1 200
+box -70 -200 255 1225
+use CSRL_D_FF  CSRL_D_FF_0
+timestamp 1614619048
+transform 1 0 70 0 1 200
+box -70 -200 255 1225
+<< labels >>
+rlabel locali -90 910 -90 910 7 D
+rlabel metal1 -90 1355 -90 1355 7 VP
+rlabel metal1 -90 105 -90 105 7 VN
+rlabel locali -90 30 -90 30 7 CLK
+rlabel locali 1160 910 1160 910 3 Q
+rlabel locali 1160 1225 1160 1225 3 Qn
+<< end >>
