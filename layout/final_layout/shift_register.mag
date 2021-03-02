@@ -1,0 +1,39 @@
+magic
+tech sky130A
+timestamp 1614662023
+<< locali >>
+rect 1120 1380 1135 1470
+rect 20 1250 35 1290
+rect 1120 900 1135 990
+rect 20 0 35 20
+<< metal1 >>
+rect 20 1505 35 1605
+rect 20 35 35 135
+use D_latch  D_latch_3 ~/Documents/MADVLSI-MP2/layout/final_layout
+timestamp 1614660924
+transform 1 0 885 0 1 235
+box -70 -255 270 1390
+use D_latch  D_latch_2
+timestamp 1614660924
+transform 1 0 635 0 1 235
+box -70 -255 270 1390
+use D_latch  D_latch_1
+timestamp 1614660924
+transform 1 0 385 0 1 235
+box -70 -255 270 1390
+use D_latch  D_latch_0
+timestamp 1614660924
+transform 1 0 135 0 1 235
+box -70 -255 270 1390
+use inverter  inverter_0 ~/Documents/MADVLSI-MP2/layout/final_layout
+timestamp 1614649743
+transform 1 0 70 0 1 170
+box -70 -170 85 1455
+<< labels >>
+rlabel locali 1135 1425 1135 1425 3 Qn
+rlabel locali 1135 945 1135 945 3 Q
+rlabel metal1 20 85 20 85 7 VN
+rlabel locali 20 10 20 10 7 CLK
+rlabel locali 20 1270 20 1270 7 D
+rlabel metal1 20 1555 20 1555 7 VP
+<< end >>

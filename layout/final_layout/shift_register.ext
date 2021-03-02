@@ -1,0 +1,312 @@
+timestamp 1614662023
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use D_latch D_latch_3 1 0 1770 0 1 470
+use D_latch D_latch_2 1 0 1270 0 1 470
+use D_latch D_latch_1 1 0 770 0 1 470
+use D_latch D_latch_0 1 0 270 0 1 470
+use inverter inverter_0 1 0 140 0 1 340
+node "VN" 1 98.2 40 70 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6000 460 0 0 0 0 0 0 0 0 0 0
+node "VP" 1 98.2 40 3010 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6000 460 0 0 0 0 0 0 0 0 0 0
+node "CLK" 16 39.61 40 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1200 140 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q" 73 120.495 2240 1800 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5400 420 0 0 0 0 0 0 0 0 0 0 0 0
+node "D" 33 62.72 40 2500 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qn" 73 120.495 2240 2760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5400 420 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "D_latch_1/Qn" "D_latch_2/a_30_2280#" 120.558
+cap "D_latch_3/VN" "inverter_0/Y" 227.515
+cap "D_latch_0/Q" "D_latch_1/a_30_1320#" 66.5991
+cap "D_latch_2/a_30_2280#" "D_latch_3/VN" 121.395
+cap "D_latch_2/a_30_2280#" "D_latch_1/Q" 101.044
+cap "D_latch_2/a_30_2280#" "D_latch_1/a_30_2280#" 7.76471
+cap "D_latch_3/VN" "D_latch_1/a_30_1320#" 1.16044
+cap "D_latch_1/Qn" "D_latch_0/Qn" 8.6003
+cap "D_latch_0/Qn" "D_latch_3/VN" 197.14
+cap "D_latch_0/a_30_1320#" "D_latch_3/CLK" 35.957
+cap "D_latch_1/Q" "D_latch_0/Qn" 20.3824
+cap "D_latch_3/CLK" "D_latch_2/a_30_1320#" 27.375
+cap "D_latch_1/a_30_2280#" "D_latch_0/Qn" 120.558
+cap "D_latch_0/a_30_2280#" "D_latch_3/CLK" 11.8989
+cap "D_latch_1/Qn" "D_latch_3/VN" 197.872
+cap "D_latch_2/a_30_2280#" "D_latch_3/CLK" 14.0968
+cap "inverter_0/A" "D_latch_3/VN" 72.6
+cap "D_latch_3/a_30_2280#" "D_latch_2/a_30_1320#" 1.78378
+cap "D_latch_1/a_30_2280#" "D_latch_0/Q" 101.044
+cap "D_latch_0/Q" "D_latch_3/VN" 211
+cap "D_latch_3/CLK" "D_latch_1/a_30_1320#" 74.0224
+cap "D_latch_1/a_30_2280#" "D_latch_3/VN" 122.722
+cap "D_latch_1/Q" "D_latch_3/VN" 211.163
+cap "D_latch_3/a_30_2280#" "D_latch_2/a_30_2280#" 2.67568
+cap "D_latch_0/Qn" "D_latch_3/CLK" 169.615
+cap "D_latch_1/Qn" "D_latch_3/CLK" 148.55
+cap "D_latch_3/CLK" "D_latch_0/Q" 62.3226
+cap "inverter_0/A" "D_latch_3/CLK" 66.5022
+cap "D_latch_1/Qn" "D_latch_2/Q" 10.1912
+cap "D_latch_0/a_30_1320#" "inverter_0/Y" 37.0817
+cap "D_latch_0/a_30_2280#" "inverter_0/Y" 123.434
+cap "D_latch_1/Q" "D_latch_3/CLK" 54.1613
+cap "D_latch_3/CLK" "D_latch_3/VN" 591.9
+cap "D_latch_1/a_30_2280#" "D_latch_3/CLK" 25.9957
+cap "D_latch_2/Q" "D_latch_3/VN" 0.0812808
+cap "D_latch_0/a_30_1320#" "D_latch_1/a_30_1320#" 3.88235
+cap "D_latch_3/CLK" "D_latch_2/a_30_1320#" 1.24324
+cap "D_latch_1/a_30_1320#" "D_latch_2/a_30_1320#" 3.88235
+cap "D_latch_2/a_30_2280#" "D_latch_3/CLK" 4.48683
+cap "D_latch_2/a_30_2280#" "D_latch_1/a_30_1320#" 24.2647
+cap "D_latch_1/Qn" "D_latch_2/Qn" 4.30015
+cap "inverter_0/A" "D_latch_0/a_30_1320#" 19.1273
+cap "D_latch_1/Qn" "D_latch_2/a_30_1320#" 23.3556
+cap "inverter_0/A" "D_latch_0/a_30_2280#" 16.1852
+cap "D_latch_3/VN" "D_latch_2/Qn" 0.365764
+cap "D_latch_0/a_30_1320#" "D_latch_3/VN" 0.314286
+cap "D_latch_0/Qn" "D_latch_1/a_30_1320#" 36.4889
+cap "D_latch_0/a_30_2280#" "D_latch_3/VN" 24.2604
+cap "D_latch_0/a_30_1320#" "D_latch_1/a_30_2280#" 24.2647
+cap "D_latch_0/Q" "inverter_0/Y" 25.1351
+cap "D_latch_0/a_30_2280#" "D_latch_1/a_30_2280#" 7.76471
+cap "D_latch_3/VN" "D_latch_2/a_30_1320#" 0.889805
+cap "D_latch_1/Q" "D_latch_2/a_30_1320#" 46.9491
+cap "D_latch_3/VN" "D_latch_2/Q" 211.081
+cap "D_latch_2/Q" "D_latch_3/CLK" 62.3226
+cap "D_latch_1/Qn" "D_latch_2/Q" 10.1912
+cap "D_latch_2/a_30_2280#" "D_latch_3/a_30_2280#" 7.76471
+cap "D_latch_2/a_30_1320#" "D_latch_1/a_30_1320#" 0.846154
+cap "D_latch_3/VN" "D_latch_2/a_30_2280#" 3.04615
+cap "D_latch_2/a_30_2280#" "D_latch_3/CLK" 8.65535
+cap "D_latch_2/a_30_2280#" "D_latch_1/CLK" 1.27778
+cap "D_latch_3/VN" "D_latch_3/a_30_1320#" 0.846154
+cap "D_latch_3/a_30_1320#" "D_latch_3/CLK" 38.0654
+cap "D_latch_3/VN" "D_latch_3/a_30_2280#" 121.308
+cap "D_latch_3/a_30_1320#" "D_latch_2/Qn" 36.4889
+cap "D_latch_2/Qn" "D_latch_3/a_30_2280#" 120.558
+cap "D_latch_3/a_30_2280#" "D_latch_3/CLK" 14.0968
+cap "D_latch_1/Qn" "D_latch_2/a_30_2280#" 47.3444
+cap "D_latch_1/Q" "D_latch_2/a_30_1320#" 26.0389
+cap "D_latch_3/VN" "D_latch_3/CLK" 295.95
+cap "D_latch_1/CLK" "D_latch_3/CLK" 2.35897
+cap "D_latch_3/VN" "D_latch_2/Qn" 197.506
+cap "D_latch_2/Qn" "D_latch_3/CLK" 169.615
+cap "D_latch_3/VN" "D_latch_3/Q" 0.162562
+cap "D_latch_1/Qn" "D_latch_2/Qn" 4.30015
+cap "D_latch_1/Qn" "D_latch_3/CLK" 21.0645
+cap "D_latch_2/Qn" "D_latch_3/Q" 20.3824
+cap "D_latch_2/a_30_2280#" "D_latch_1/a_30_1320#" 1.69231
+cap "D_latch_1/Q" "D_latch_2/a_30_2280#" 22.2391
+cap "D_latch_3/VN" "D_latch_3/Qn" 0.731527
+cap "D_latch_3/Qn" "D_latch_2/Qn" 8.6003
+cap "D_latch_1/Q" "D_latch_3/CLK" 8.16129
+cap "D_latch_2/a_30_1320#" "D_latch_2/a_30_2280#" -2.6
+cap "D_latch_3/a_30_1320#" "D_latch_2/a_30_1320#" 3.88235
+cap "D_latch_2/a_30_1320#" "D_latch_3/a_30_2280#" 24.2647
+cap "D_latch_2/Q" "D_latch_3/a_30_2280#" 101.044
+cap "D_latch_3/VN" "D_latch_2/a_30_1320#" 0.676923
+cap "D_latch_3/a_30_1320#" "D_latch_2/Q" 66.5991
+cap "D_latch_2/a_30_1320#" "D_latch_3/CLK" 34.4827
+cap "D_latch_2/a_30_1320#" "D_latch_1/CLK" 15.3333
+cap "D_latch_1/Qn" "D_latch_2/a_30_1320#" 15.1333
+cap "D_latch_2/Dn" "D_latch_2/CLK" 16.8584
+cap "D_latch_1/VN" "D_latch_1/CLK" 69.3
+cap "D_latch_1/VN" "D_latch_0/a_30_1320#" 2.27857
+cap "D_latch_1/a_30_2280#" "D_latch_2/CLK" 49.5211
+cap "D_latch_2/a_30_1320#" "D_latch_2/Dn" 116.786
+cap "D_latch_2/Dn" "D_latch_1/D" 20.3824
+cap "D_latch_0/D" "D_latch_0/CLK" 187.016
+cap "D_latch_2/Dn" "D_latch_3/Dn" 1.78378
+cap "D_latch_0/a_30_1320#" "D_latch_1/a_30_1320#" 7.35604
+cap "D_latch_3/VP" "D_latch_1/a_30_1320#" 20.4828
+cap "D_latch_2/VN" "D_latch_2/CLK" 69.3
+cap "D_latch_2/D" "D_latch_2/CLK" 22.2996
+cap "D_latch_0/D" "D_latch_0/Dn" 64.3681
+cap "D_latch_1/CLK" "D_latch_1/Dn" 96.6
+cap "D_latch_2/D" "D_latch_2/a_30_1320#" 298.219
+cap "D_latch_2/D" "D_latch_1/D" 3.56757
+cap "D_latch_1/a_30_2280#" "D_latch_1/Dn" 102.03
+cap "D_latch_1/CLK" "D_latch_0/a_30_2280#" 49.5211
+cap "D_latch_2/VN" "D_latch_1/a_30_1320#" 2.27857
+cap "D_latch_2/D" "D_latch_3/Dn" 10.1912
+cap "D_latch_3/a_30_1320#" "D_latch_2/a_30_2280#" 1.78378
+cap "D_latch_2/CLK" "D_latch_1/a_30_1320#" 12.8529
+cap "D_latch_1/a_30_2280#" "D_latch_0/a_30_2280#" 7.76471
+cap "D_latch_1/VN" "D_latch_1/a_30_1320#" 3.94872
+cap "D_latch_2/a_30_1320#" "D_latch_3/D" 0.365764
+cap "D_latch_0/D" "D_latch_0/VN" 5.60212
+cap "D_latch_1/CLK" "D_latch_0/CLK" 91.2251
+cap "D_latch_1/CLK" "D_latch_2/a_30_2280#" 37.4139
+cap "D_latch_2/a_30_1320#" "D_latch_3/CLK" 1.24324
+cap "D_latch_2/D" "D_latch_2/Dn" 46.8
+cap "D_latch_0/a_30_1320#" "D_latch_1/D" 0.731527
+cap "D_latch_1/D" "D_latch_1/CLK" 212.126
+cap "D_latch_1/a_30_2280#" "D_latch_0/CLK" 51.2816
+cap "D_latch_2/a_30_1320#" "D_latch_3/VP" 20.4828
+cap "D_latch_1/VN" "D_latch_1/Dn" 74.25
+cap "D_latch_3/VP" "D_latch_1/D" 4.41618
+cap "D_latch_1/a_30_2280#" "D_latch_2/a_30_1320#" 24.2647
+cap "D_latch_0/a_30_1320#" "D_latch_0/D" 84.3937
+cap "D_latch_1/a_30_2280#" "D_latch_1/D" 39.4833
+cap "D_latch_0/D" "D_latch_3/VP" -5.85863
+cap "D_latch_1/a_30_1320#" "D_latch_1/Dn" 116.786
+cap "D_latch_2/CLK" "D_latch_1/CLK" 91.2251
+cap "D_latch_0/VN" "D_latch_0/Dn" 61.875
+cap "D_latch_1/a_30_1320#" "D_latch_0/a_30_2280#" 24.2647
+cap "D_latch_2/VN" "D_latch_2/a_30_1320#" 3.94872
+cap "D_latch_2/Dn" "D_latch_2/a_30_2280#" 83.7799
+cap "D_latch_1/VN" "D_latch_1/D" 24.4825
+cap "D_latch_0/a_30_1320#" "D_latch_0/Dn" 433.174
+cap "D_latch_3/VP" "D_latch_0/Dn" 16.9714
+cap "D_latch_1/a_30_1320#" "D_latch_0/CLK" 12.3326
+cap "D_latch_2/D" "D_latch_3/D" 1.78378
+cap "D_latch_2/a_30_1320#" "D_latch_1/a_30_1320#" 7.35604
+cap "D_latch_1/a_30_1320#" "D_latch_1/D" 304.394
+cap "D_latch_2/VN" "D_latch_2/Dn" 74.25
+cap "D_latch_2/CLK" "D_latch_2/Dn" 96.6
+cap "D_latch_1/CLK" "D_latch_1/Dn" 33.7168
+cap "D_latch_2/D" "D_latch_3/VP" 3.44559
+cap "D_latch_2/D" "D_latch_2/a_30_2280#" 25.875
+cap "D_latch_1/D" "D_latch_1/Dn" 46.8
+cap "D_latch_2/a_30_1320#" "D_latch_3/a_30_1320#" 0.891892
+cap "D_latch_2/D" "D_latch_2/VN" 24.4825
+cap "D_latch_0/a_30_1320#" "D_latch_1/CLK" 12.8529
+cap "D_latch_0/D" "D_latch_0/a_30_2280#" 75.283
+cap "D_latch_2/D" "D_latch_2/CLK" 212.126
+cap "D_latch_3/CLK" "D_latch_2/a_30_2280#" 1.24324
+cap "D_latch_0/a_30_1320#" "D_latch_3/VP" 33
+cap "D_latch_3/VN" "D_latch_2/a_30_1320#" 0.632937
+cap "D_latch_1/D" "D_latch_1/CLK" 44.5992
+cap "D_latch_2/a_30_1320#" "D_latch_1/CLK" 8.87217
+cap "D_latch_2/D" "D_latch_1/VN" 0.568966
+cap "D_latch_2/Dn" "D_latch_1/Dn" 3.56757
+cap "D_latch_1/a_30_2280#" "D_latch_2/a_30_2280#" 7.76471
+cap "D_latch_0/D" "D_latch_0/CLK" 44.4474
+cap "D_latch_2/VN" "D_latch_3/D" 0.284483
+cap "D_latch_0/Dn" "D_latch_1/Dn" 58.027
+cap "D_latch_2/D" "D_latch_1/a_30_1320#" 0.731527
+cap "D_latch_0/D" "D_latch_1/D" 8.68421
+cap "D_latch_3/CLK" "D_latch_2/a_30_2280#" 7.71448
+cap "D_latch_0/Dn" "D_latch_0/a_30_2280#" 63.0554
+cap "D_latch_3/Q" "D_latch_3/VN" 0.568966
+cap "D_latch_3/VN" "D_latch_2/a_30_1320#" 1.68929
+cap "D_latch_3/D" "D_latch_2/VN" 0.284483
+cap "D_latch_3/VN" "D_latch_3/a_30_1320#" 3.94872
+cap "D_latch_3/a_30_2280#" "D_latch_3/D" 39.4833
+cap "D_latch_3/a_30_2280#" "D_latch_2/CLK" 51.2816
+cap "D_latch_2/Dn" "D_latch_2/a_30_2280#" 25.8611
+cap "D_latch_3/D" "D_latch_3/Dn" 46.8
+cap "D_latch_1/CLK" "D_latch_2/a_30_1320#" 4.63989
+cap "D_latch_3/Dn" "D_latch_3/CLK" 96.6
+cap "D_latch_3/D" "D_latch_3/VN" 24.4825
+cap "D_latch_3/D" "D_latch_3/CLK" 44.5992
+cap "D_latch_2/a_30_1320#" "D_latch_2/D" 17.0306
+cap "D_latch_3/CLK" "D_latch_3/VN" 69.3
+cap "D_latch_2/a_30_2280#" "D_latch_3/a_30_1320#" 24.2647
+cap "D_latch_3/a_30_2280#" "D_latch_3/Dn" 102.03
+cap "D_latch_2/Dn" "D_latch_2/a_30_1320#" 2.44444
+cap "D_latch_3/D" "D_latch_2/D" 1.78378
+cap "D_latch_2/D" "D_latch_2/CLK" 22.2996
+cap "D_latch_1/a_30_2280#" "D_latch_2/a_30_2280#" 2.53846
+cap "D_latch_3/Dn" "D_latch_3/CLK" 33.7168
+cap "D_latch_3/CLK" "D_latch_2/a_30_2280#" 42.7391
+cap "D_latch_3/Dn" "D_latch_3/VN" 74.25
+cap "D_latch_3/VP" "D_latch_2/D" 0.970588
+cap "D_latch_2/a_30_1320#" "D_latch_3/a_30_1320#" 7.35604
+cap "D_latch_2/Dn" "D_latch_2/CLK" 16.8584
+cap "D_latch_3/D" "D_latch_3/Qn" 20.3824
+cap "D_latch_3/a_30_2280#" "D_latch_2/a_30_2280#" 7.76471
+cap "D_latch_3/D" "D_latch_3/Q" 3.56757
+cap "D_latch_3/Dn" "D_latch_2/D" 10.1912
+cap "D_latch_3/D" "D_latch_2/a_30_1320#" 0.365764
+cap "D_latch_3/D" "D_latch_3/a_30_1320#" 304.394
+cap "D_latch_2/a_30_1320#" "D_latch_1/a_30_2280#" 1.69231
+cap "D_latch_2/CLK" "D_latch_3/a_30_1320#" 12.3326
+cap "D_latch_3/CLK" "D_latch_2/a_30_1320#" 12.8529
+cap "D_latch_3/Dn" "D_latch_2/Dn" 1.78378
+cap "D_latch_3/VP" "D_latch_3/a_30_1320#" 20.4828
+cap "D_latch_1/CLK" "D_latch_2/a_30_2280#" 16.0618
+cap "D_latch_2/a_30_1320#" "D_latch_2/VN" 1.26923
+cap "D_latch_3/D" "D_latch_3/CLK" 212.126
+cap "D_latch_3/Dn" "D_latch_3/Qn" 3.56757
+cap "D_latch_3/CLK" "D_latch_2/CLK" 91.2251
+cap "D_latch_3/D" "D_latch_3/VP" 4.41618
+cap "D_latch_2/D" "D_latch_2/a_30_2280#" 15.9083
+cap "D_latch_3/Dn" "D_latch_3/a_30_1320#" 116.786
+subcap "D" -305.825
+cap "D_latch_0/Q" "D_latch_1/a_30_1320#" 3
+cap "D_latch_3/VP" "D_latch_1/Dn" 4.41618
+cap "inverter_0/A" "D_latch_0/CLK" 6.9
+cap "D_latch_3/Dn" "D_latch_2/a_30_2280#" 0.365764
+cap "D_latch_1/a_30_1320#" "D_latch_2/CLK" 2.02941
+cap "D_latch_0/CLK" "D_latch_1/a_30_1320#" 2.02941
+cap "D_latch_2/a_30_1320#" "D_latch_1/CLK" 1.01471
+cap "D_latch_0/CLK" "inverter_0/A" 1.91667
+cap "D_latch_3/VP" "D_latch_0/Dn" 31.6412
+cap "D_latch_1/CLK" "D_latch_0/Q" 6.9
+cap "D_latch_1/Dn" "D_latch_0/Q" 46.8
+cap "D_latch_2/a_30_1320#" "D_latch_1/Q" 1.5
+cap "D_latch_0/a_30_2280#" "D_latch_1/Dn" 0.731527
+cap "D_latch_1/CLK" "D_latch_0/CLK" 3.28571
+cap "D_latch_1/a_30_2280#" "D_latch_2/Dn" 0.731527
+cap "D_latch_3/VP" "D_latch_1/a_30_2280#" 20.4828
+cap "D_latch_2/Dn" "D_latch_1/Q" 46.8
+cap "D_latch_0/Dn" "D_latch_0/CLK" 46.8
+cap "D_latch_1/CLK" "D_latch_1/Dn" 46.8
+cap "D_latch_0/a_30_2280#" "D_latch_0/Dn" 29.7
+cap "D_latch_0/Dn" "inverter_0/A" 46.8
+cap "D_latch_0/Q" "D_latch_1/CLK" 1.91667
+cap "D_latch_0/a_30_1320#" "inverter_0/A" 3
+cap "D_latch_1/CLK" "D_latch_2/CLK" 3.28571
+cap "D_latch_3/VP" "D_latch_2/Dn" 3.44559
+cap "D_latch_2/CLK" "D_latch_1/Q" 0.958333
+cap "D_latch_1/CLK" "D_latch_0/a_30_1320#" 2.02941
+cap "D_latch_1/Q" "D_latch_2/CLK" 6.9
+cap "D_latch_1/Dn" "D_latch_1/a_30_2280#" 29.7
+cap "D_latch_3/VP" "D_latch_0/a_30_2280#" 33
+cap "D_latch_2/Dn" "D_latch_2/a_30_2280#" 29.7
+cap "D_latch_3/VP" "D_latch_2/a_30_2280#" 20.4828
+cap "D_latch_2/Dn" "D_latch_2/CLK" 46.8
+subcap "Qn" -78.765
+cap "D_latch_2/a_30_2280#" "D_latch_3/Dn" 0.365764
+cap "D_latch_2/Q" "D_latch_3/CLK" 1.91667
+cap "D_latch_1/CLK" "D_latch_2/a_30_1320#" 1.01471
+cap "D_latch_3/a_30_2280#" "D_latch_3/Dn" 29.7
+cap "D_latch_2/Q" "D_latch_3/a_30_1320#" 3
+cap "D_latch_3/CLK" "D_latch_2/Q" 6.9
+cap "D_latch_2/a_30_1320#" "D_latch_1/Q" 1.5
+cap "D_latch_3/CLK" "D_latch_3/Dn" 46.8
+cap "D_latch_2/CLK" "D_latch_1/Q" 0.958333
+cap "D_latch_3/VP" "D_latch_3/Dn" 4.41618
+cap "D_latch_2/CLK" "D_latch_3/a_30_1320#" 2.02941
+cap "D_latch_3/CLK" "D_latch_2/a_30_1320#" 2.02941
+cap "D_latch_3/VP" "D_latch_3/a_30_2280#" 20.4828
+cap "D_latch_2/CLK" "D_latch_3/CLK" 3.28571
+cap "D_latch_2/Dn" "D_latch_3/VP" 0.970588
+cap "D_latch_2/Q" "D_latch_3/Dn" 46.8
+merge "inverter_0/VN" "VN" -2881.17 0 0 0 0 0 0 0 0 306000 -3600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 339200 -3120 489800 -10240 0 0 0 0 0 0 0 0 0 0
+merge "VN" "D_latch_0/VN"
+merge "D_latch_0/VN" "D_latch_1/VN"
+merge "D_latch_1/VN" "D_latch_2/VN"
+merge "D_latch_2/VN" "D_latch_3/VN"
+merge "D_latch_3/VN" "VSUBS"
+merge "D_latch_0/Qn" "D_latch_1/Dn" -107.68 0 0 0 0 0 0 0 0 0 0 -2000 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -600 0 0 0 0 0 0 0 0 0 0 0 0
+merge "D_latch_3/Qn" "Qn" -128.745 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5400 -450 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/VP" "D_latch_0/VP" -2214.07 0 0 0 0 -600000 -13440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77100 -2860 0 0 0 0 0 0 0 0 0 0
+merge "D_latch_0/VP" "D_latch_1/VP"
+merge "D_latch_1/VP" "D_latch_2/VP"
+merge "D_latch_2/VP" "D_latch_3/VP"
+merge "D_latch_3/VP" "VP"
+merge "D_latch_1/Qn" "D_latch_2/Dn" -67.72 0 0 0 0 0 0 0 0 0 0 43800 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43200 -600 0 0 0 0 0 0 0 0 0 0 0 0
+merge "D_latch_2/Q" "D_latch_3/D" 30.5 0 0 0 0 0 0 0 0 0 0 123600 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 125600 -520 0 0 0 0 0 0 0 0 0 0 0 0
+merge "D_latch_0/Q" "D_latch_1/D" -99 0 0 0 0 0 0 0 0 0 0 -20000 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14400 -520 0 0 0 0 0 0 0 0 0 0 0 0
+merge "D_latch_3/Q" "Q" -120.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5400 -420 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/CLK" "D_latch_0/CLK" -347.61 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1200 -1260 0 0 0 0 0 0 0 0 0 0 0 0
+merge "D_latch_0/CLK" "D_latch_1/CLK"
+merge "D_latch_1/CLK" "D_latch_2/CLK"
+merge "D_latch_2/CLK" "D_latch_3/CLK"
+merge "D_latch_3/CLK" "CLK"
+merge "inverter_0/A" "inverter_0/Ao" -159.475 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3000 -600 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/Ao" "D"
+merge "D" "D_latch_0/D"
+merge "inverter_0/Y" "D_latch_0/Dn" -107.68 0 0 0 0 0 0 0 0 0 0 -2000 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -600 0 0 0 0 0 0 0 0 0 0 0 0
+merge "D_latch_2/Qn" "D_latch_3/Dn" -36.64 0 0 0 0 0 0 0 0 0 0 80200 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76800 -600 0 0 0 0 0 0 0 0 0 0 0 0
+merge "D_latch_1/Q" "D_latch_2/D" -29.07 0 0 0 0 0 0 0 0 0 0 56400 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61200 -520 0 0 0 0 0 0 0 0 0 0 0 0

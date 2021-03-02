@@ -1,0 +1,46 @@
+Flattening unmatched subcell CSRL_D_FF in circuit shift_register_xschem_lvs.spice (0)(4 instances)
+Flattening unmatched subcell D_latch in circuit shift_register.spice (1)(4 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Cell inverter disconnected node: CLK
+Class inverter:  Merged 1 devices.
+
+Cell inverter disconnected node: CLK
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VDD                                        |VP **Mismatch**                            
+GND                                        |VN **Mismatch**                            
+(no matching pin)                          |CLK                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for inverter and inverter altered to match.
+
+Subcircuit summary:
+Circuit 1: shift_register_xschem_lvs.spice |Circuit 2: shift_register.spice            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (32)               |sky130_fd_pr__pfet_01v8 (32)               
+sky130_fd_pr__nfet_01v8 (32)               |sky130_fd_pr__nfet_01v8 (32)               
+inverter (1)                               |inverter (1)                               
+Number of devices: 65                      |Number of devices: 65                      
+Number of nets: 37                         |Number of nets: 37                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes shift_register_xschem_lvs.spice and shift_register.spice are equivalent.
+Circuits match uniquely.
